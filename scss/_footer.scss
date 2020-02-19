@@ -1,0 +1,27 @@
+@import "variables";
+
+.grid-footer {
+  &-items {
+    justify-self: center;
+    text-align: center;
+
+    & a {
+      justify-self: center;
+      color: lighten($primary-font-color, 5);
+      text-decoration: none;
+    }
+
+    & a:hover {
+      color: darken($primary-font-color, 5);
+    }
+  }
+
+  & ul {
+    list-style: none;
+    padding: 3px 0;
+
+    & li {
+      padding: 3px 0;
+    }
+  }
+}

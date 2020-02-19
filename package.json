@@ -1,0 +1,14 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "CSS Responsive Grid without Media Queries",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Claus Rux",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

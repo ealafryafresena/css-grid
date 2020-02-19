@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+
+.grid-header {
+  @include header-grid(5, 60px, background(dark));
+  padding: 0 40px;
+}
+
+.grid-menu {
+  @include header-grid(10, 100%, background(dark));
+  top: 0;
+  opacity: 0.95;
+  visibility: hidden;
+}
+
+.grid-one-column {
+  background-color: background(dark);
+  @include section-grid(220px, 80px 10%, 20px, 400px);
+
+  &-item {
+    justify-self: center;
+    max-width: 880px;
+    text-align: center;
+    font-size: $font-size-unit-10 * 2.2;
+  }
+
+  & h2 {
+    margin-bottom: 22px;
+  }
+}
+
+.grid-two-column {
+  background-color: background(medium);
+  @include section-grid(300px, 80px 10%, 20px, 400px);
+
+  &.dark-color {
+    background-color: background(dark);
+  }
+
+  &-inner {
+    max-width: 450px;
+    justify-self: center;
+  }
+
+  &-inner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    background-color: darken(background(dark), 2);
+  }
+}
+
+.grid-four-column {
+  background-color: background(medium);
+  @include section-grid(260px, 80px 10%, 20px, 400px);
+
+  &-inner {
+    background-color: darken(background(dark), 2);
+  }
+}
+
+.grid-footer {
+  background-color: background(light);
+  @include section-grid(180px, 80px 10%, 20px, 400px);
+}

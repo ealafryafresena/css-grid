@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+.hero {
+  width: 100%;
+  max-height: $hero-max-height;
+  position: relative;
+
+  & img {
+    @include image;
+    max-height: $hero-max-height;
+  }
+
+  & h1 {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: lighten($primary-font-color, 15);
+    text-align: center;
+    min-width: 375px;
+    font-size: $font-size-unit-10 * 5.8;
+    line-height: 0.8;
+    background-color: rgba($primary-color, 0.7);
+  }
+}

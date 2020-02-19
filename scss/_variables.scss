@@ -1,0 +1,17 @@
+$primary-color: #363636;
+$secondary-color: #3a3a3a;
+$footer-background-color: #535353;
+$background-colors: (
+  "light": #535353,
+  "medium": #3a3a3a,
+  "dark": #363636
+);
+$primary-font-color: #bdbdbd;
+$font-weight-heading: 400;
+$font-size-unit-10: 10px;
+$hero-max-height: 500px;
+$ease-out-transition: all 0.2s ease-out;
+
+@function background($background-color) {
+  @return map-get($background-colors, $background-color);
+}

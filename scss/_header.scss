@@ -1,0 +1,55 @@
+@import "variables";
+
+.grid-header {
+  &-logo {
+    align-self: center;
+    justify-self: start;
+    font-size: $font-size-unit-10 * 2.4;
+
+    & a {
+      color: lighten($primary-font-color, 5);
+      text-decoration: none;
+    }
+
+    & a:hover {
+      color: darken($primary-font-color, 5);
+    }
+  }
+
+  &-menu-btn {
+    position: fixed;
+    z-index: 15;
+    right: 40px;
+    top: 21px;
+    cursor: pointer;
+    transition: $ease-out-transition;
+
+    &-line {
+      width: 30px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background-color: $primary-font-color;
+      transition: $ease-out-transition;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-menu-btn.close {
+    transform: rotate(180deg);
+
+    & .grid-header-menu-btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    & .grid-header-menu-btn-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    & .grid-header-menu-btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+}

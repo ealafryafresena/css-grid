@@ -1,0 +1,26 @@
+.grid-menu {
+  & ul {
+    justify-self: center;
+    align-self: center;
+    list-style: none;
+    text-align: center;
+
+    & li {
+      padding: 10px 0;
+
+      & a {
+        color: lighten($primary-font-color, 5);
+        font-size: $font-size-unit-10 * 3;
+        text-decoration: none;
+      }
+
+      & a:hover {
+        color: darken($primary-font-color, 5);
+      }
+    }
+  }
+
+  &.show {
+    visibility: visible;
+  }
+}
