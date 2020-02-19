@@ -1,8 +1,7 @@
 {
   "name": "css-grid",
   "version": "1.0.0",
-  "description": "CSS Responsive Grid without Media Queries",
-  "main": "index.js",
+  "description": "CSS Responsive Grid, no Media Queries and no Flexbox",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
