@@ -6,7 +6,11 @@ This is a basic example for a responsive template with CSS Grid Layout only. No 
 
 CSS Grid Layout is a powerful two-dimensional grid-based layout system. It can handle columns and rows, unlike flexbox which is largely a 1-dimensional system.
 
-### See Basic Example
+### Demo CSS Grid Layout
+
+[Demo](https://ealafryafresena.github.io/css-grid/)
+
+### Open Basic Example
 
 ```
 open index.html in your browser
